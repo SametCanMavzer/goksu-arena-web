@@ -1,0 +1,50 @@
+
+
+.d{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center
+}
+
+
+.about-content{
+    padding: 10px 120px;    
+    color: rgb(255, 255, 255);
+     max-width: 1200px;
+    height: 100%;
+     position: relative;
+     z-index: 4;
+     background-color: rgba(0, 0, 0, 0.6);
+     border-radius: 5%;
+     font-weight: 600;
+    font-size: 1.6rem;
+    /* color: rgb(255, 255, 255); */
+    
+ }
+
+.about-content h2{
+    font-size: 30px;
+    color: var(--sari);
+    font-weight: 600;
+}
+
+
+ .vizyon , .misyon,.hizmet{
+    margin: 30px 0;
+ }
+
+ @media  (max-width: 728px){
+
+   .about-content {
+    max-width: 350px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+ 
+ }
+ 
+     
+
+ }

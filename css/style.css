@@ -1,0 +1,1082 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+   color: #333; 
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+p {
+  margin: 1rem 0;
+}
+img {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--yesil);
+  opacity: 0.8;
+  color: aliceblue;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  top: 0;
+  padding: 0 3rem;
+
+}
+
+.navbar a {
+  color: aliceblue;
+  padding: 1rem 2rem;
+  margin: 0.5px;
+} 
+.navbar ul {
+  display: flex;
+}
+ .navbar a:hover {
+  border-bottom: 2px solid var(--sari);
+  color: var(--sari);
+} 
+.navbar .brand {
+  font-weight: 400;
+margin-top: 10px;
+}
+.navbar h1 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar h1 > span {
+  color: var(--sari);
+
+}
+.navbar  span> strong {
+  
+  vertical-align: middle;
+}
+.navbar .ilk-i  {
+  font-size: 45px;
+  color: aliceblue;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+}
+.ikinci-i{
+  color: aliceblue ;
+  font-size: 40px;
+  display: none;
+
+}
+.main-header {
+   /* background-image: url("../img/resim1.jpg");  */
+   /* background-image: url("../img/resim31.jpeg"); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;  */
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+.main-header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.main-header::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+   /* background-color: rgba(0, 0, 0, 0.6);  */
+}
+.main-header * {
+  z-index: 5;
+}
+.main-header .content h1 {
+  font-size: 5.5rem;
+  color: var(--sari);
+  font-weight: bold;
+  margin-bottom: 10px;
+ 
+}
+/* .main-headar .content p {
+  font-size: 2.3rem;
+  max-width: 6rem;
+  margin: 3rem 0 2rem;
+  color: aliceblue;
+} */
+
+.main-header .header-sos-container {
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ padding: 10px;
+ max-width: 800px; 
+ height: 120px;
+ 
+ 
+  
+}
+.main-header .header-sos{
+  margin: 0 20px;
+  width: 320px;
+  border: 3px solid var(--yesil);
+  border-radius: 10px;
+  padding: 5px;
+  /* background-color: var(--yesil); */
+}
+
+.main-header .header-sos:hover{
+  border: 3px solid var(--sari);
+  background-color: var(--yesil);
+  transition:  all 0.5s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+  cursor: pointer;
+ 
+}
+
+
+.main-header .header-sos p{ 
+  font-size: 2rem;
+  color: aliceblue;
+  margin: 5px 2px;
+  padding: 5px;
+  
+}
+.main-header .header-sos h4{
+  font-size: 2rem;
+  color: var(--sari);
+  padding:  2px 10px ;
+  margin: 0 100px 0 7px;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.btn-secondary:hover {
+  border-bottom: 1px solid var(--sari);
+  color: var(--sari);
+}
+
+        /* services */
+
+.flex-items {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.flex-items > div {
+  padding: 20px;
+  flex-basis: 100%;
+}
+
+.icons {
+  padding: 5px;
+}
+.icons h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.icons i {
+  background-color: var(--yesil);
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* flex colums */
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: warp;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+.flex-columns .column {
+  text-align: center;
+  flex: 1;
+  
+}
+.flex-columns .column-1 {
+  height: 100%;
+}
+.flex-columns .column-2 {
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--yesil);
+  text-align: center;
+}
+.column-1 img {
+  height: 750px;
+  width: 100%;
+}
+
+.flex-columns h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: gold;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.flex-columns p {
+  margin: 2rem 0;
+}
+.flex-columns button {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+/* gallery*/
+
+#gallery img:hover {
+  cursor: pointer;
+  scale: 1.4;
+  border-radius: 30px;
+  transition-duration: 0.9s;
+}
+#gallery .ayarlama img {
+  /* margin-left: 45px; */
+  width: 350px;
+  height: 350px;
+   /* margin: 0 15px; */
+   padding: 0 5px;
+}
+#gallery .ayarlama1 {
+  margin-right: 45px;
+}
+#gallery .gizlenmis{
+  display: none;
+}
+
+
+
+.maddeler {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  margin: 7rem;
+  margin-top: 4rem;
+  background: var(--yesil);
+  
+}
+.maddeler ul {
+  list-style-type: disc;
+}
+.maddeler ul li {
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--sari);
+}
+.maddeler ul li p {
+  color: aliceblue;
+}
+.maddeler h2 {
+  color: var(--sari);
+  padding: 2rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  height: 100px;
+}
+.footer i {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.footer i:hover {
+  scale: 2;
+}
+.footer .face {
+  color: #4267b2;
+}
+.footer .twit {
+  color: #1da1f2;
+}
+.footer .yout {
+  color: #ff0000;
+}
+.footer .inst {
+  color: #c13584;
+}
+
+.main-header::before{
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+
+  -webkit-animation: imgShift 24s linear infinite 0s;
+  -moz-animation: imgShift 24s linear infinite 0s;
+  -o-animation: imgShift 24s linear infinite 0s;
+  -ms-animation: imgShift 24s linear infinite 0s;
+  animation: imgShift 24s linear infinite 0s;
+}
+.container::before{
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; 
+
+  -webkit-animation: imgShift 24s linear infinite 0s;
+  -moz-animation: imgShift 24s linear infinite 0s;
+  -o-animation: imgShift 24s linear infinite 0s;
+  -ms-animation: imgShift 24s linear infinite 0s;
+  animation: imgShift 24s linear infinite 0s;
+}
+
+
+@-webkit-keyframes imgShift {
+  0% {
+      opacity: 0; 
+      background-image: url("../img/resim31.jpeg"); 
+  -webkit-animation-timing-function: ease-in; 
+}
+  4.16% {
+      opacity: 0.175; 
+      background-image: url("../img/resim31.jpeg"); 
+   
+   }
+   8.32% {
+      opacity: 0.35; 
+      background-image: url("../img/resim31.jpeg"); 
+    
+    }
+   12.48% { opacity: 0.525 ;
+    background-image: url("../img/resim31.jpeg"); 
+  
+  }
+  16.64% {
+     opacity: 0.70 ;
+     background-image: url("../img/resim31.jpeg"); 
+     -webkit-animation-timing-function: ease-out;
+  }
+  20.8% { 
+    opacity: 0.525;
+    background-image: url("../img/resim31.jpeg"); 
+  }
+  24.96% {
+     opacity: 0.35;
+     background-image: url("../img/resim31.jpeg"); 
+    
+  }
+  29.12% { 
+    opacity: 0.175;
+    background-image: url("../img/resim31.jpeg"); 
+    
+  }
+
+  33.28% { 
+    opacity: 0;
+    background-image: url("../img/resim31.jpeg"); 
+   
+  }
+
+   /* ilk resim bitti */
+
+  37.44% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  41.6% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  45.76% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  49.92% { 
+    opacity: 0.70;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  54.08% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  58.24% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  62.4% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  66.56% { 
+    opacity: 0;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+
+  /* ikinci resim biti */
+
+  70.72% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  74.88% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  79.04% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  83.2% { 
+    opacity: 0.70;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  87.36% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  91.52% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  95.68% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  100% { 
+    opacity: 0;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+
+ /* üçüncü resim bitti */
+
+
+  
+}
+@-moz-keyframes imgShift {
+  0% {
+      opacity: 0; 
+      background-image: url("../img/resim31.jpeg"); 
+  -moz-animation-timing-function: ease-in; 
+}
+  4.16% {
+      opacity: 0.175; 
+      background-image: url("../img/resim31.jpeg"); 
+  
+   }
+   8.32% {
+      opacity: 0.35; 
+      background-image: url("../img/resim31.jpeg"); 
+    
+    }
+   12.48% { opacity: 0.525 ;
+    background-image: url("../img/resim31.jpeg"); 
+  
+  }
+  16.64% {
+     opacity: 0.70 ;
+     background-image: url("../img/resim31.jpeg"); 
+     -moz-animation-timing-function: ease-out;
+  }
+  20.8% { 
+    opacity: 0.525;
+    background-image: url("../img/resim31.jpeg"); 
+  }
+  24.96% {
+     opacity: 0.35;
+     background-image: url("../img/resim31.jpeg"); 
+    
+  }
+  29.12% { 
+    opacity: 0.175;
+    background-image: url("../img/resim31.jpeg"); 
+    
+  }
+
+  33.28% { 
+    opacity: 0;
+    background-image: url("../img/resim31.jpeg"); 
+   
+  }
+
+   /* ilk resim bitti */
+
+  37.44% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  41.6% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  45.76% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  49.92% { 
+    opacity: 0.70;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  54.08% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  58.24% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  62.4% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  66.56% { 
+    opacity: 0;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+
+  /* ikinci resim biti */
+
+  70.72% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  74.88% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  79.04% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  83.2% { 
+    opacity: 0.70;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  87.36% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  91.52% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  95.68% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  100% { 
+    opacity: 0;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+
+ /* üçüncü resim bitti */
+
+
+  
+}
+
+@-o-keyframes imgShift {
+  0% {
+      opacity: 0; 
+      background-image: url("../img/resim31.jpeg"); 
+  -o-animation-timing-function: ease-in; 
+}
+  4.16% {
+      opacity: 0.175; 
+      background-image: url("../img/resim31.jpeg"); 
+  
+   }
+   8.32% {
+      opacity: 0.35; 
+      background-image: url("../img/resim31.jpeg"); 
+    
+    }
+   12.48% { opacity: 0.525 ;
+    background-image: url("../img/resim31.jpeg"); 
+  
+  }
+  16.64% {
+     opacity: 0.70 ;
+     background-image: url("../img/resim31.jpeg"); 
+     -o-animation-timing-function: ease-out;
+  }
+  20.8% { 
+    opacity: 0.525;
+    background-image: url("../img/resim31.jpeg"); 
+  }
+  24.96% {
+     opacity: 0.35;
+     background-image: url("../img/resim31.jpeg"); 
+    
+  }
+  29.12% { 
+    opacity: 0.175;
+    background-image: url("../img/resim31.jpeg"); 
+    
+  }
+
+  33.28% { 
+    opacity: 0;
+    background-image: url("../img/resim31.jpeg"); 
+   
+  }
+
+   /* ilk resim bitti */
+
+  37.44% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  41.6% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  45.76% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  49.92% { 
+    opacity: 0.70;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  54.08% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  58.24% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  62.4% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  66.56% { 
+    opacity: 0;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+
+  /* ikinci resim biti */
+
+  70.72% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  74.88% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  79.04% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  83.2% { 
+    opacity: 0.70;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  87.36% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  91.52% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  95.68% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  100% { 
+    opacity: 0;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+
+ /* üçüncü resim bitti */
+
+
+  
+}
+@-ms-keyframes imgShift {
+  0% {
+      opacity: 0; 
+      background-image: url("../img/resim31.jpeg"); 
+  -ms-animation-timing-function: ease-in; 
+}
+  4.16% {
+      opacity: 0.175; 
+      background-image: url("../img/resim31.jpeg"); 
+  
+   }
+   8.32% {
+      opacity: 0.35; 
+      background-image: url("../img/resim31.jpeg"); 
+    
+    }
+   12.48% { opacity: 0.525 ;
+    background-image: url("../img/resim31.jpeg"); 
+  
+  }
+  16.64% {
+     opacity: 0.70 ;
+     background-image: url("../img/resim31.jpeg"); 
+     -ms-animation-timing-function: ease-out;
+  }
+  20.8% { 
+    opacity: 0.525;
+    background-image: url("../img/resim31.jpeg"); 
+  }
+  24.96% {
+     opacity: 0.35;
+     background-image: url("../img/resim31.jpeg"); 
+    
+  }
+  29.12% { 
+    opacity: 0.175;
+    background-image: url("../img/resim31.jpeg"); 
+    
+  }
+
+  33.28% { 
+    opacity: 0;
+    background-image: url("../img/resim31.jpeg"); 
+   
+  }
+
+   /* ilk resim bitti */
+
+  37.44% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  41.6% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  45.76% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  49.92% { 
+    opacity: 0.70;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  54.08% { 
+    opacity: 0.525;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  58.24% { 
+    opacity: 0.35;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  62.4% { 
+    opacity: 0.175;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+  66.56% { 
+    opacity: 0;
+    background-image: url("../img/resim1.jpg");
+   
+  }
+
+  /* ikinci resim biti */
+
+  70.72% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  74.88% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  79.04% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  83.2% { 
+    opacity: 0.70;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  87.36% { 
+    opacity: 0.525;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  91.52% { 
+    opacity: 0.35;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  95.68% { 
+    opacity: 0.175;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+  100% { 
+    opacity: 0;
+    background-image: url(../img/resim17.jpg);
+   
+  }
+
+ /* üçüncü resim bitti */
+
+
+  
+}
+
+
+/* mobile */
+@media (max-width: 728px) {
+  html {
+    font-size: 8px;
+  }
+   /* .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }  */
+
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  
+   .menu{
+    width: 100%;
+    display: none;
+   }
+   .ilk-i{
+    margin-top: 10px;
+   }
+  .ikinci-i{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    
+  } 
+   .goster{
+    display: block;
+   
+   }
+  .navbar {
+   
+    display: flex;
+    
+  }
+ .menu1{
+  height: 210px !important;
+ } 
+ 
+  .navbar h1{
+  align-self: flex-start;
+  }
+  .navbar ul {
+    display: flex;
+   
+    text-align: center;
+    
+    font-size: 20px;
+   flex-direction: column; 
+
+  }
+  .navbar li{
+  padding: 3px 0;
+ 
+ 
+  }
+  .navbar li a{
+    margin-right: 25px;
+  }
+ 
+  .navbar nav{
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 18px;
+ 
+  }
+  .navbar .ilk-i{
+    bottom: 15px;
+  }
+  .main-header .header-sos-container {
+    display: block;
+   
+   }
+   .main-header .header-sos {
+    margin: 10px 20px;
+    width: 270px;
+   
+   }
+ 
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: warp;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+  }
+  .flex-grid .column {
+    flex: 30%;
+    padding: 0 0.4rem;
+    justify-content:center;
+    display: flex;
+  }
+  /* #gallery .ayarlama {
+    /* margin-left: 5px; */
+  /* } */ */
+  #gallery .ayarlama1 {
+    margin-right: 5px;
+    display: none;
+  }
+  #gallery .ayarlama2{
+    display: none;
+  }
+  #gallery .ayarlama img{
+
+    width: 100px;
+    height: 100px;
+     margin: 0; 
+     padding: 0 2px;
+    
+  }
+  #gallery .ayarlama img:nth-child(0){
+       padding: 0;
+  }
+  #gallery .gizlenmis{
+    display: block;
+  }
+  .section-padding{
+    padding: 2rem 4rem 4rem;
+  }
+  .maddeler {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 2.5rem;
+    margin-top: 4rem;
+    background: var(--yesil);
+  }
+  .maddeler ul li{
+    list-style-type: none;
+  }
+  #gallery img:hover {
+    cursor: pointer;
+    scale: 1.5;
+    border-radius: 10%;
+    transition-duration: 0.9s;
+  }
+}

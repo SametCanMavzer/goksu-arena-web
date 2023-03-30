@@ -1,0 +1,100 @@
+/*
+ seçtiğin renkler
+ #2eb872(yeşil)
+ #fbff7c(sarı)
+
+ */
+
+:root {
+  /* --yesil: #2eb872; */
+  /* --yesil: #2c786c;  */
+  /* --yesil:#004445; */
+    /* --sari:gold; */
+    /* --yesil : seagreen; */
+    --sari: gold;
+    --yesil:#0D6238;
+}
+
+
+.text-primary {
+  color: var(--sari);
+
+}
+.bg-primary {
+  background-color: var(--yesil);
+  padding: 2rem;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.btn-primary {
+  color: var(--sari);
+  background-color: var(--yesil);
+
+}
+.btn-primary:hover {
+  color: var(--yesil);
+  background-color: var(--sari);
+}
+.btn-secondary {
+  color: aliceblue;
+  background-color: var(--yesil);
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid aliceblue;
+  color: aliceblue;
+}
+.btn-outline:hover {
+  background: var(--sari);
+  border: 1px slod var(--yesil);
+  color: var(--yesil);
+  transition-duration: 0.3s;
+}
+
+/* about */
+
+#about {
+  color: aliceblue;
+}
+/* section */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+}
+.section-header h2 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  color: var(--sari);
+  font-weight: 700;
+}
+.section-padding {
+  padding: 2rem 2rem 4rem;
+}
+
+/* flex gird */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.4rem;
+}
+.flex-grid .column {
+  flex: 25%;
+   padding: 0 0.4rem; 
+   display: flex;
+   justify-content: center;
+}
